@@ -2,7 +2,6 @@ openapi: 3.0.0
 
 info:
   description: 'This is the domain for definitions of COBIS Customer module. This is all about customers objects like, identification, natural and legal persons, catalogs, etc.'
-  version: '1.0.0'
   title: 'COBIS Customers Domain'
 
 components:
@@ -16,9 +15,7 @@ components:
         code: # field:di_direccion
           $ref: '#/components/schemas/CodeNumber'
         address: #field:di_descripcion
-          description: 'Dirección de correspondencia.'
-          type: string
-          maxLength: 254        
+          description: 'Dirección de correspondencia.'    
         colony: #field:di_parroquia
           $ref: 'https://raw.githubusercontent.com/eliashel/cobisapi/master/private/domains/general-purpose/admin/v1/COBISAdminDomain.yaml#/components/schemas/ZipCode'
         city: #field:di_ciudad
