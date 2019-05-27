@@ -1,0 +1,3 @@
+[submodule "git-flow-submodule"]
+	path = git-flow-submodule
+	url = git://github.com/frankrb27/git-flow-submodule.git
